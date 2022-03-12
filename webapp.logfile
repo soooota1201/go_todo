@@ -1,0 +1,9 @@
+2022/03/12 15:13:23 main.go:15: test
+2022/03/12 15:13:29 main.go:15: test
+2022/03/12 15:39:38 base.go:25: invalid DSN: missing the slash separating the database name
+2022/03/12 15:40:57 base.go:25: invalid DSN: missing the slash separating the database name
+2022/03/12 15:41:52 base.go:25: invalid DSN: missing the slash separating the database name
+2022/03/12 15:42:35 base.go:25: invalid DSN: missing the slash separating the database name
+2022/03/12 15:52:02 base.go:25: sql: unknown driver "root:root@/mysql" (forgotten import?)
+2022/03/12 16:16:10 base.go:34: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AUTOINCREMENT, uuid STRING NOT NULL UNIQUE, name STRING, email STRING, password ' at line 1
+2022/03/12 16:16:55 base.go:34: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL UNIQUE, name STRING, email STRING, password STRING, created_at D' at line 1
