@@ -13,6 +13,7 @@ type Todo struct {
 	CreatedAt time.Time
 }
 
+// insert 関数
 func (u *User) CreateTodo(content string) (err error) {
 	cmd := `insert into todos (content, user_id, created_at) values (?, ?, ?)`
 	_, err = Db.Exec(cmd, content, u.ID, time.Now())
@@ -22,6 +23,7 @@ func (u *User) CreateTodo(content string) (err error) {
 	return err
 }
 
+// get 関数
 func GetTodo(id int) (todo Todo, err error) {
 	cmd := `select id, content, user_id, created_at from todos where id = ?`
 	todo = Todo{}
@@ -75,4 +77,22 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 	}
 	rows.Close()
 	return todos, err
+}
+
+func (t *Todo) UpdateTodo() error {
+	cmd := `update todos set content = ?, user_id = ? where id = ?`
+	_, err = Db.Exec(cmd, t.Content, t.UserID, t.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}
+
+func (t *Todo) DeleteTodo() error {
+	cmd := `delete from todos where id = ?`
+	_, err = Db.Exec(cmd, t.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
 }
