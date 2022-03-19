@@ -9,3 +9,7 @@
 2022/03/12 16:16:55 base.go:34: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL UNIQUE, name STRING, email STRING, password STRING, created_at D' at line 1
 2022/03/12 17:21:34 users.go:33: sql: database is closed
 2022/03/12 17:22:20 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/03/19 10:34:15 todos.go:19: Error 1054: Unknown column 'use_id' in 'field list'
+2022/03/19 11:17:38 todos.go:51: sql: Scan error on column index 3, name "created_at": unsupported Scan, storing driver.Value type []uint8 into type *time.Time
+2022/03/19 11:24:08 todos.go:50: sql: Scan error on column index 3, name "created_at": unsupported Scan, storing driver.Value type []uint8 into type *time.Time
+2022/03/19 11:50:49 todos.go:72: sql: expected 3 destination arguments in Scan, not 4
