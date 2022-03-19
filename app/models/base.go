@@ -1,12 +1,16 @@
 package models
 
 import (
+	"crypto/sha1"
 	"database/sql"
+	"fmt"
+
 	// "fmt"
 	"log"
 	"todo_app/config"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/google/uuid"
 )
 
 //テーブルの作成のコードを書いていく
@@ -25,7 +29,7 @@ func init() {
 		log.Fatalln(err)
 	}
 
-	defer Db.Close()
+	// defer Db.Close()
 
 	cmdU := `CREATE TABLE IF NOT EXISTS ` + tableNameUser + ` ( 
 		id INTEGER PRIMARY KEY AUTO_INCREMENT, 
@@ -39,5 +43,15 @@ func init() {
 		log.Fatalln(err)
 	}
 
-	Db.Close()
+	// Db.Close()
+}
+
+func createUUID() (uuidobj uuid.UUID) {
+	uuidobj, _ = uuid.NewUUID()
+	return uuidobj
+}
+
+func Encrypt(plaintext string) (crypttext string) {
+	crypttext = fmt.Sprintf("%x", sha1.Sum([]byte(plaintext)))
+	return crypttext
 }
