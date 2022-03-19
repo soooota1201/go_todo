@@ -13,3 +13,773 @@
 2022/03/19 11:17:38 todos.go:51: sql: Scan error on column index 3, name "created_at": unsupported Scan, storing driver.Value type []uint8 into type *time.Time
 2022/03/19 11:24:08 todos.go:50: sql: Scan error on column index 3, name "created_at": unsupported Scan, storing driver.Value type []uint8 into type *time.Time
 2022/03/19 11:50:49 todos.go:72: sql: expected 3 destination arguments in Scan, not 4
+2022/03/19 12:51:00 server.go:3160: http: panic serving [::1]:49456: http: multiple registrations for /static/
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000318040})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000306060})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c000}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c000}, 0xc0000e4900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000974a0}, {0x13de8a0, 0xc00031c000}, 0xc0000e4900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a6f00, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:00 server.go:3160: http: panic serving [::1]:49455: http: multiple registrations for /static/
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0003180a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000306120})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c0e0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c0e0}, 0xc0000e4700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114030}, {0x13de8a0, 0xc00031c0e0}, 0xc0000e4700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a6e60, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:00 server.go:3160: http: panic serving [::1]:49457: http: multiple registrations for /static/
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0100})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018e270})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a41c0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a41c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a41c0}, 0xc000128200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e120}, {0x13de8a0, 0xc0001a41c0}, 0xc000128200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba000, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:00 server.go:3160: http: panic serving [::1]:49460: http: multiple registrations for /static/
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0170})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018e3f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a42a0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a42a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a42a0}, 0xc0001a8400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e330}, {0x13de8a0, 0xc0001a42a0}, 0xc0001a8400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba140, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:01 server.go:3160: http: panic serving [::1]:49465: http: multiple registrations for /static/
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a01e0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018e570})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4380}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4380}, 0xc000368000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000306240}, {0x13de8a0, 0xc0001a4380}, 0xc000368000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c000, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:01 server.go:3160: http: panic serving [::1]:49466: http: multiple registrations for /static/
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0240})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018e660})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4460}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4460}, 0xc0001a8500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e4b0}, {0x13de8a0, 0xc0001a4460}, 0xc0001a8500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba1e0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:01 server.go:3160: http: panic serving [::1]:49467: http: multiple registrations for /static/
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0002bd250})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002bab40})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000ee620}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000ee620}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000ee620}, 0xc0000e4a00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002baa80}, {0x13de8a0, 0xc0000ee620}, 0xc0000e4a00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a70e0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:06 server.go:3160: http: panic serving [::1]:49468: http: multiple registrations for /static/
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0002bd2c0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002bac60})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000ee700}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000ee700}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000ee700}, 0xc0000e4b00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002baba0}, {0x13de8a0, 0xc0000ee700}, 0xc0000e4b00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c0a0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:06 server.go:3160: http: panic serving [::1]:49469: http: multiple registrations for /static/
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000318120})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000306420})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c1c0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c1c0}, 0xc000368100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000306360}, {0x13de8a0, 0xc00031c1c0}, 0xc000368100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c140, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:06 server.go:3160: http: panic serving [::1]:49470: http: multiple registrations for /static/
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0002bd330})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002bade0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000ee7e0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000ee7e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000ee7e0}, 0xc0000e4c00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002bad20}, {0x13de8a0, 0xc0000ee7e0}, 0xc0000e4c00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a7180, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:11 server.go:3160: http: panic serving [::1]:49472: http: multiple registrations for /static/
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0002bd3a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002baf00})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000ee8c0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000ee8c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000ee8c0}, 0xc0000e4d00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002bae40}, {0x13de8a0, 0xc0000ee8c0}, 0xc0000e4d00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba280, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:11 server.go:3160: http: panic serving [::1]:49473: http: multiple registrations for /static/
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a02b0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018e8a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4540}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4540}, 0xc0001a8600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e7e0}, {0x13de8a0, 0xc0001a4540}, 0xc0001a8600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba320, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:11 server.go:3160: http: panic serving [::1]:49474: http: multiple registrations for /static/
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018ea20})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4620}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4620}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4620}, 0xc0001a8700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018e960}, {0x13de8a0, 0xc0001a4620}, 0xc0001a8700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba3c0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:41 server.go:3160: http: panic serving [::1]:49475: http: multiple registrations for /static/
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0390})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018eba0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4700}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4700}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4700}, 0xc0000e4e00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002bafc0}, {0x13de8a0, 0xc0001a4700}, 0xc0000e4e00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a7220, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:41 server.go:3160: http: panic serving [::1]:49476: http: multiple registrations for /static/
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a03f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018ec60})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a47e0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a47e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a47e0}, 0xc0001a8800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018eae0}, {0x13de8a0, 0xc0001a47e0}, 0xc0001a8800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba460, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:41 server.go:3160: http: panic serving [::1]:49477: http: multiple registrations for /static/
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0460})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018ede0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a48c0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a48c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a48c0}, 0xc0001a8900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018ed20}, {0x13de8a0, 0xc0001a48c0}, 0xc0001a8900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001ba500, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:59 server.go:3160: http: panic serving [::1]:49478: http: multiple registrations for /static/
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a04d0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018ef00})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a49a0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a49a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a49a0}, 0xc0001a8a00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018ee40}, {0x13de8a0, 0xc0001a49a0}, 0xc0001a8a00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a72c0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:59 server.go:3160: http: panic serving [::1]:49479: http: multiple registrations for /static/
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000318180})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0003064e0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c2a0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c2a0}, 0xc0000e4f00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002bb0e0}, {0x13de8a0, 0xc00031c2a0}, 0xc0000e4f00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a7360, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:51:59 server.go:3160: http: panic serving [::1]:49480: http: multiple registrations for /static/
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0003181f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000306660})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c380}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c380}, 0xc000368300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003065a0}, {0x13de8a0, 0xc00031c380}, 0xc000368300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c1e0, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:52:00 server.go:3160: http: panic serving [::1]:49481: http: multiple registrations for /static/
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000318270})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0003068a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc00031c460}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc00031c460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc00031c460}, 0xc000368400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000306720}, {0x13de8a0, 0xc00031c460}, 0xc000368400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c280, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:52:00 server.go:3160: http: panic serving [::1]:49482: http: multiple registrations for /static/
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0530})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018efc0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4a80}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4a80}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4a80}, 0xc000368500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003067e0}, {0x13de8a0, 0xc0001a4a80}, 0xc000368500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00035c320, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:52:00 server.go:3160: http: panic serving [::1]:49483: http: multiple registrations for /static/
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001a0590})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00018f080})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001a4b60}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001a4b60}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001a4b60}, 0xc0000e5000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002bb1a0}, {0x13de8a0, 0xc0001a4b60}, 0xc0000e5000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000a7400, {0x13dffe0, 0xc000097350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:06 server.go:3160: http: panic serving [::1]:49564: http: multiple registrations for /static/
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000181170})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000183620})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001fe2a0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001fe2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001fe2a0}, 0xc0000a4800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096030}, {0x13de8a0, 0xc0001fe2a0}, 0xc0000a4800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001a2f00, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:06 server.go:3160: http: panic serving [::1]:49563: http: multiple registrations for /static/
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001811d0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0001836e0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001fe380}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001fe380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001fe380}, 0xc0001f2400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c030}, {0x13de8a0, 0xc0001fe380}, 0xc0001f2400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001a2e60, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:06 server.go:3160: http: panic serving [::1]:49565: http: multiple registrations for /static/
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000181230})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0001837d0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001fe460}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001fe460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001fe460}, 0xc000130200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c0f0}, {0x13de8a0, 0xc0001fe460}, 0xc000130200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00012a000, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:06 server.go:3160: http: panic serving [::1]:49566: http: multiple registrations for /static/
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001200f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c360})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001400e0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001400e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001400e0}, 0xc000130300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c2a0}, {0x13de8a0, 0xc0001400e0}, 0xc000130300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00012a140, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:11 server.go:3160: http: panic serving [::1]:49567: http: multiple registrations for /static/
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc00030c1a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002ff710})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000b0460}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000b0460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000b0460}, 0xc000130400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c3c0}, {0x13de8a0, 0xc0000b0460}, 0xc000130400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002be140, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:11 server.go:3160: http: panic serving [::1]:49568: http: multiple registrations for /static/
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000120160})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c480})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001401c0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001401c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001401c0}, 0xc0000a4900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ff650}, {0x13de8a0, 0xc0001401c0}, 0xc0000a4900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002be1e0, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:11 server.go:3160: http: panic serving [::1]:49569: http: multiple registrations for /static/
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc00030c210})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002ff890})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000b0540}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000b0540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000b0540}, 0xc0000a4b00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ff7d0}, {0x13de8a0, 0xc0000b0540}, 0xc0000a4b00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002be280, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:12 server.go:3160: http: panic serving [::1]:49570: http: multiple registrations for /static/
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001201c0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c570})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001402a0}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001402a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001402a0}, 0xc0001f2500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000183890}, {0x13de8a0, 0xc0001402a0}, 0xc0001f2500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001a3040, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:12 server.go:3160: http: panic serving [::1]:49571: http: multiple registrations for /static/
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc0001812a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc000183950})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0001fe540}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0001fe540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0001fe540}, 0xc0000a4c00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ff950}, {0x13de8a0, 0xc0001fe540}, 0xc0000a4c00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002be320, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:12 server.go:3160: http: panic serving [::1]:49572: http: multiple registrations for /static/
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc00030c290})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc0002ffad0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc0000b0620}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc0000b0620}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc0000b0620}, 0xc0000a4d00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ffa10}, {0x13de8a0, 0xc0000b0620}, 0xc0000a4d00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002be3c0, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:17 server.go:3160: http: panic serving [::1]:49574: http: multiple registrations for /static/
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000120230})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c7b0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc000140380}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc000140380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc000140380}, 0xc0000a4e00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002ffb30}, {0x13de8a0, 0xc000140380}, 0xc0000a4e00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00012a1e0, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:17 server.go:3160: http: panic serving [::1]:49575: http: multiple registrations for /static/
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000120290})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c870})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc000140460}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc000140460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc000140460}, 0xc000130500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c6f0}, {0x13de8a0, 0xc000140460}, 0xc000130500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00012a280, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/19 12:56:17 server.go:3160: http: panic serving [::1]:49576: http: multiple registrations for /static/
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x1303940, 0xc000120300})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+net/http.(*ServeMux).Handle(0x1607740, {0x1366b81, 0x8}, {0x13d8700, 0xc00011c9f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2441 +0x226
+net/http.Handle(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2484
+todo_app/app/controllers.top({0x13de8a0, 0xc000140540}, 0x0)
+	/Users/nakaisota/sotadev/go/todo_app/app/controllers/route_main.go:11 +0xb4
+net/http.HandlerFunc.ServeHTTP(0x0, {0x13de8a0, 0xc000140540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x13de8a0, 0xc000140540}, 0xc000130600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011c930}, {0x13de8a0, 0xc000140540}, 0xc000130600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00012a320, {0x13dffe0, 0xc000183350})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
